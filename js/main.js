@@ -11,7 +11,7 @@ var p = {
 
 // Methods
 var m = {
-  calculator: function(action, digit) {
+  calculator: function(action, digit) { // Operations
 
     switch (action) {
       case 'decimal':
@@ -59,11 +59,11 @@ var m = {
     }
   },
 
-  deleteCalculator: function() {
+  deleteCalculator: function() { // Delete memory
     p.operations.innerHTML = 0;
   },
 
-  init: function() {
+  init: function() { // Init function
     for (var i = 0; i < p.keys.length; i++) {
       p.keys[i].addEventListener('click', m.selectKey);
     }
@@ -71,7 +71,7 @@ var m = {
     document.addEventListener('keydown', m.pressKey);
   },
 
-  pressKey: function(key) {
+  pressKey: function(key) { // Press keyboard
     if (key.keyCode == 48 || key.keyCode == 96) {
       p.action = 'number';
       p.digit = 0;
@@ -158,7 +158,7 @@ var m = {
     m.calculator(p.action, p.digit);
   },
 
-  selectKey: function(key) {
+  selectKey: function(key) { // Select in screen
     p.action = key.target.getAttribute('class');
     p.digit = key.target.innerHTML;
 
