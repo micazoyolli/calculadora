@@ -1,8 +1,10 @@
 # Calculadora JS
 Calculadora que realiza sumas, restas, multiplicaciones y divisiones.
 
-![Calculadora JS](https://github.com/micazoyolli/calculadora/blob/master/img/screenshot.png)
+<p align="center">
+  <img alt="Calculadora JS" src="https://github.com/micazoyolli/calculadora/blob/master/img/screenshot.png" width="500" />
+</p>
 
 Demo
 ---
-[Calculadora JS Demo](https://micazoyolli.github.io/calculadora/) 
+[Calculadora JS Demo](https://micazoyolli.github.io/calculadora/)
