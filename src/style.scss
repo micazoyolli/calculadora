@@ -1,0 +1,125 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  align-items: center;
+  background-color: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  padding: 1rem;
+}
+
+#calculator {
+  background-color: #303d4e;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 400px;
+  padding: 2rem;
+  width: 100%;
+}
+
+#resultado {
+  background-color: #a2cfda;
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: inset 8px 7px 3px -2px #74939c;
+  color: #303d4e;
+  font-size: 2.5rem;
+  padding: 1rem;
+  text-align: right;
+  width: 100%;
+}
+
+.control-row {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.buttons {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+button {
+  background-color: #4d637e;
+  border: 4px solid #435870;
+  border-radius: 0.5rem;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 2rem;
+  padding: 1rem;
+  transition: background-color 0.2s ease;
+
+  &:hover {
+    background-color: #3b5269;
+  }
+
+  &[data-value="/"],
+  &[data-value="*"],
+  &[data-value="-"],
+  &[data-value="+"] {
+    background-color: #7f9fc5;
+    border-color: #6582a7;
+  }
+
+  &[data-clear],
+  &[data-delete] {
+    background-color: #7f9fc5;
+    border-color: #6582a7;
+  }
+
+  &[data-equals] {
+    background-color: #ef7c3a;
+    border-color: #d1622a;
+
+    &:hover {
+      background-color: #e76e28;
+    }
+  }
+}
+
+.footer {
+  color: #aaa;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+  text-align: center;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  #calculator {
+    padding: 1rem;
+  }
+
+  button {
+    font-size: 1.5rem;
+    padding: 0.75rem;
+  }
+
+  #resultado {
+    font-size: 2rem;
+    padding: 0.75rem;
+  }
+}
