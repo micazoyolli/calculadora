@@ -2,7 +2,7 @@
 
 Calculadora que realiza sumas, restas, multiplicaciones y divisiones. Reescrita con tecnologías modernas para mejorar estructura, estilo y mantenibilidad.
 
-<img alt="Calculadora JS" src="https://github.com/micazoyolli/calculadora/blob/master/public/assets/screenshot.png" width="300" />
+<img alt="Calculadora JS" src="https://github.com/micazoyolli/calculadora/blob/gh-pages/public/assets/screenshot.png" width="300" />
 
 ## 🌐 Demo
 
@@ -17,15 +17,21 @@ Calculadora que realiza sumas, restas, multiplicaciones y divisiones. Reescrita 
 ## 📦 Estructura del proyecto
 
 ```
-calculadora-vite/
+calculadora/
 ├── index.html
 ├── public/
-│   └── assets/
-│       └── favicon.ico
+│   ├── assets/
+│   │   ├── favicon.ico
+│   │   └── screenshot.png
+│   ├── manifest.json
+│   └── robots.txt
 ├── src/
 │   ├── main.js
 │   └── style.scss
-└── package.json
+├── .editorconfig
+├── .gitignore
+├── package.json
+└── vite.config.js
 ```
 
 ## ▶️ Uso
