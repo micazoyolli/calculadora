@@ -25,8 +25,7 @@ calculadora-vite/
 ├── src/
 │   ├── main.js
 │   └── style.scss
-├── package.json
-└── vite.config.js
+└── package.json
 ```
 
 ## ▶️ Uso
