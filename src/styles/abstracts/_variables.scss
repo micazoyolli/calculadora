@@ -1,0 +1,36 @@
+// 🎨 Colores
+$color-white: #ffffff;
+$color-bg: #dddffb;
+$color-bg-dark: #303d4e;
+$color-bg-light: #a2cfda;
+$color-bg-highlight: #74939c;
+
+$color-primary: #4d637e;
+$color-primary-dark: #3b5269;
+$color-primary-border: #435870;
+
+$color-secondary: #7f9fc5;
+$color-secondary-border: #6582a7;
+$color-secondary-hover: #6a93c4;
+
+$color-accent: #ef7c3a;
+$color-accent-border: #d1622a;
+$color-accent-hover: #e76e28;
+
+// 🔤 Tipografía
+$font-family-base: sans-serif;
+
+// 📏 Espaciado
+$spacing-sm: 0.75rem;
+$spacing-md: 1rem;
+$spacing-lg: 2rem;
+
+// 🧱 Border radius
+$radius-md: 1rem;
+
+// 🌫️ Sombra
+$shadow-main: 0 0 20px rgba(0, 0, 0, 0.2);
+$shadow-inset: inset 8px 7px 3px -2px $color-bg-highlight;
+
+// 📱 Breakpoints
+$bp-mobile: 480px;

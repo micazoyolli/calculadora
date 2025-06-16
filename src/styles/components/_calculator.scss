@@ -1,0 +1,54 @@
+@use '../abstracts/variables' as *;
+
+body {
+  align-items: center;
+  background-color: $color-bg;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  padding: $spacing-md;
+}
+
+.calculator {
+  background-color: $color-bg-dark;
+  border-radius: $radius-md;
+  box-shadow: $shadow-main;
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-md;
+  max-width: 400px;
+  padding: $spacing-lg;
+  width: 100%;
+
+  .result {
+    background-color: $color-bg-light;
+    border: none;
+    border-radius: $radius-md;
+    box-shadow: inset 8px 7px 3px -2px $shadow-inset;
+    color: $color-bg-dark;
+    font-size: 2.5rem;
+    outline: 0;
+    padding: $spacing-md;
+    text-align: right;
+    width: 100%;
+  }
+
+  .control-row {
+    display: grid;
+    gap: $spacing-md;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+@media (max-width: $bp-mobile) {
+  .calculator {
+    padding: $spacing-md;
+
+    .result {
+      font-size: 2rem;
+      padding: $spacing-sm;
+    }
+  }
+}

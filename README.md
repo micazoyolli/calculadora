@@ -18,7 +18,6 @@ Calculadora que realiza sumas, restas, multiplicaciones y divisiones. Reescrita 
 
 ```
 calculadora/
-├── index.html
 ├── public/
 │   ├── assets/
 │   │   ├── favicon.ico
@@ -26,10 +25,23 @@ calculadora/
 │   ├── manifest.json
 │   └── robots.txt
 ├── src/
+│   ├── Calculator.js
 │   ├── main.js
-│   └── style.scss
+│   ├── main.scss
+│   └── styles/
+│       ├── abstracts/
+│       │   └── _variables.scss
+│       ├── base/
+│       │   └── _reset.scss
+│       └── components/
+│           ├── _buttons.scss
+│           ├── _calculator.scss
+│           └── _footer.scss
+├── index.html
 ├── .editorconfig
 ├── .gitignore
+├── .nvmrc
+├── LICENSE
 ├── package.json
 └── vite.config.js
 ```
