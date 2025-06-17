@@ -1,4 +1,4 @@
-# 🧮 Calculadora Web
+# 🧮 Calculadora JS
 
 Calculadora que realiza sumas, restas, multiplicaciones y divisiones. Reescrita con tecnologías modernas para mejorar estructura, estilo y mantenibilidad.
 
