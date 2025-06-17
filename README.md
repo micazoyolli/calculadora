@@ -1,6 +1,6 @@
 # 🧮 Calculadora JS
 
-Calculadora que realiza sumas, restas, multiplicaciones y divisiones. Reescrita con tecnologías modernas para mejorar estructura, estilo y mantenibilidad.
+Calculadora que realiza sumas, restas, multiplicaciones y divisiones. Desarrollada con tecnologías modernas para mejorar estructura, estilo y mantenibilidad.
 
 <img alt="Calculadora JS" src="https://github.com/micazoyolli/calculadora/blob/master/public/assets/screenshot.png" width="300" />
 
