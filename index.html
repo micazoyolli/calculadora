@@ -2,12 +2,49 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/assets/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="theme-color" content="#303d4e" />
-    <link rel="manifest" href="/manifest.json" />
-    <title>Calculadora | <micazoyolli /></title>
+    <link rel="icon" href="/favicon.ico" />
+
+    <!-- SEO general -->
+    <meta name="author" content="@micazoyolli" />
+    <meta name="robots" content="index, follow" />
+    <title>Calculadora Web | &lt;micazoyolli /&gt;</title>
+    <meta name="title" content="Calculadora Web | &lt;micazoyolli /&gt;" />
+    <meta name="description" content="Calculadora web sencilla, rápida y responsiva. Ideal para operaciones básicas y uso diario." />
+    <meta name="keywords" content="calculadora web, calculadora online, operaciones básicas, app web, proyecto frontend" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Calculadora Web | &lt;micazoyolli /&gt;" />
+    <meta property="og:description" content="Calculadora online simple, hecha con JavaScript. ¡Úsala en cualquier dispositivo!" />
+    <meta property="og:url" content="https://micazoyolli.github.io/calculadora/" />
+    <meta property="og:site_name" content="Calculadora Web" />
+    <meta property="og:image" content="https://micazoyolli.github.io/calculadora/meta.jpg" />
+    <meta property="og:image:width" content="500" />
+    <meta property="og:image:height" content="500" />
+    <meta property="og:image:type" content="image/jpeg" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Calculadora Web | &lt;micazoyolli /&gt;" />
+    <meta name="twitter:description" content="Calculadora online simple, hecha con JavaScript. ¡Úsala en cualquier dispositivo!" />
+    <meta name="twitter:image" content="https://micazoyolli.github.io/calculadora/meta.jpg" />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://micazoyolli.github.io/calculadora/" />
+
+    <!-- PWA -->
+    <link rel="manifest" href="/manifest.json" crossorigin />
+    <link rel="apple-touch-icon" href="https://micazoyolli.github.io/calculadora/meta.jpg" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Calculadora Web" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   </head>
+
   <body>
     <main class="calculator" id="calculator">
       <input type="text" id="result" class="result" readonly />
