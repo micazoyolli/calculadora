@@ -20,10 +20,12 @@ Calculadora web moderna que realiza sumas, restas, multiplicaciones y divisiones
 calculadora/
 ├── public/
 │   ├── assets/
-│   │   ├── favicon.ico
-│   │   └── screenshot.png
+│   ├── icons/
+│   ├── favicon.ico
 │   ├── manifest.json
-│   └── robots.txt
+│   ├── meta.jpg
+│   ├── robots.txt
+│   └── sitemap.xml
 ├── src/
 │   ├── Calculator.js
 │   ├── main.js
@@ -37,10 +39,10 @@ calculadora/
 │           ├── _buttons.scss
 │           ├── _calculator.scss
 │           └── _footer.scss
-├── index.html
 ├── .editorconfig
 ├── .gitignore
 ├── .nvmrc
+├── index.html
 ├── LICENSE
 ├── package.json
 └── vite.config.js
