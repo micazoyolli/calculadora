@@ -12,7 +12,9 @@ Calculadora web moderna que realiza sumas, restas, multiplicaciones y divisiones
 
 - HTML5 + SCSS (estructura modular)
 - JavaScript moderno (ES6+)
-- Vite
+- Vite 8
+- Node 24
+- @micazoyolli/foundation para SEO/build y reduced motion
 
 ## 📦 Estructura del proyecto
 
@@ -53,6 +55,8 @@ calculadora/
 ```bash
 yarn install
 yarn dev
+yarn lint
+yarn build
 ```
 
 Abre `http://localhost:5173/calculadora/` para ver la app en el navegador.

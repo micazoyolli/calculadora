@@ -31,11 +31,71 @@ export default class Calculator {
 
   calculate() {
     try {
-      this.displayElement.value = eval(this.displayElement.value);
+      this.displayElement.value = this.evaluate(this.displayElement.value);
       this.resultDisplayed = true;
     } catch {
       this.displayElement.value = 'Error';
     }
+  }
+
+  evaluate(expression) {
+    const tokens = expression.match(/\d+(?:\.\d+)?|[+\-*/]/g);
+    if (!tokens || tokens.join('') !== expression) {
+      throw new Error('Invalid expression');
+    }
+
+    const values = [];
+    const operators = [];
+    const precedence = {
+      '+': 1,
+      '-': 1,
+      '*': 2,
+      '/': 2,
+    };
+    const applyOperator = () => {
+      const operator = operators.pop();
+      const right = values.pop();
+      const left = values.pop();
+
+      if (left === undefined || right === undefined || operator === undefined) {
+        throw new Error('Invalid expression');
+      }
+
+      if (operator === '+') values.push(left + right);
+      if (operator === '-') values.push(left - right);
+      if (operator === '*') values.push(left * right);
+      if (operator === '/') values.push(left / right);
+    };
+
+    tokens.forEach((token, index) => {
+      if (!Number.isNaN(Number(token))) {
+        values.push(Number(token));
+        return;
+      }
+
+      if (index === 0 || index === tokens.length - 1 || Number.isNaN(Number(tokens[index - 1]))) {
+        throw new Error('Invalid operator');
+      }
+
+      while (
+        operators.length > 0
+        && precedence[operators[operators.length - 1]] >= precedence[token]
+      ) {
+        applyOperator();
+      }
+
+      operators.push(token);
+    });
+
+    while (operators.length > 0) {
+      applyOperator();
+    }
+
+    if (values.length !== 1 || !Number.isFinite(values[0])) {
+      throw new Error('Invalid result');
+    }
+
+    return String(values[0]);
   }
 
   handleKey(key) {

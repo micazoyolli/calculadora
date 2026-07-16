@@ -1,4 +1,16 @@
+@use '@micazoyolli/foundation/scss' as foundation;
 @use './base/reset';
 @use './components/calculator';
 @use './components/buttons';
 @use './components/footer';
+
+@include foundation.reduced-motion {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 1ms !important;
+  }
+}
