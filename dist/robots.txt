@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /calculadora/
+Sitemap: https://micazoyolli.github.io/calculadora/sitemap.xml
