@@ -59,7 +59,13 @@ yarn lint
 yarn build
 ```
 
-Abre `http://localhost:5173/calculadora/` para ver la app en el navegador.
+Abre `http://localhost:5173/calculadora/` para ver la aplicación en el navegador.
+
+## Despliegue en GitHub Pages
+
+Este proyecto se publica en GitHub Pages desde la rama `gh-pages`. El comando `yarn deploy` compila la aplicación, limpia archivos `.DS_Store` del build y publica `dist/` usando el CLI de Micazoyolli Foundation sin crear commits de despliegue en `main`.
+
+La configuración `base` de Vite debe conservar la subruta del repositorio: `/calculadora/`.
 
 ## 🧠 Funcionalidad
 
