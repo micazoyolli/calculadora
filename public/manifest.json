@@ -1,8 +1,14 @@
 {
-  "short_name": "Calculadora",
   "name": "Calculadora Web",
+  "short_name": "Calculadora",
   "lang": "es",
+  "id": "/calculadora/",
+  "start_url": ".",
+  "scope": "/calculadora/",
+  "display": "standalone",
   "orientation": "portrait",
+  "theme_color": "#303d4e",
+  "background_color": "#303d4e",
   "icons": [
     {
       "src": "icons/icon-192x192.png",
@@ -14,9 +20,5 @@
       "sizes": "512x512",
       "type": "image/png"
     }
-  ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#303d4e",
-  "background_color": "#303d4e"
+  ]
 }
