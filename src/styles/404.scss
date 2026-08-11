@@ -2,13 +2,16 @@
 
 .not-found {
   background: $color-bg-dark;
+  box-sizing: border-box;
   color: $color-white;
   display: grid;
   grid-template-rows: 1fr auto;
   font-family: $font-family-base;
+  height: 100dvh;
   margin: 0;
   min-height: 100dvh;
-  padding: 1rem;
+  overflow: hidden;
+  padding: 1rem 1rem 4rem;
   place-items: center;
   text-align: center;
 
@@ -54,11 +57,43 @@
   }
 }
 
+@media (height <= 40rem) {
+  .not-found {
+    padding-top: 0.5rem;
+
+    &__logo {
+      height: auto;
+      margin-bottom: 0.5rem;
+      max-height: 12dvh;
+      width: auto;
+    }
+
+    &__code {
+      font-size: clamp(3rem, 14dvh, 5rem);
+    }
+
+    &__title {
+      font-size: clamp(1.5rem, 7dvh, 2.5rem);
+      margin: 0.35rem 0;
+    }
+
+    &__text {
+      line-height: 1.3;
+      margin-bottom: 0.75rem;
+    }
+  }
+}
+
 .footer {
+  bottom: 0;
+  box-sizing: border-box;
   color: $color-primary;
   font-size: 0.9rem;
-  margin-top: $spacing-lg;
+  left: 0;
+  padding: 1rem;
+  position: fixed;
   text-align: center;
+  width: 100%;
 
   a {
     color: inherit;
