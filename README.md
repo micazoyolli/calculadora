@@ -6,7 +6,7 @@ Calculadora web para operaciones básicas con interfaz accesible, soporte de tec
 
 ## 🌐 Demo
 
-[Calculadora JS Demo](https://micazoyolli.github.io/calculadora/)
+[Calculadora JS Demo](https://calculadora.nadia.dev/)
 
 ## 🛠️ Tecnologías
 
@@ -33,7 +33,7 @@ yarn preview
 yarn deploy
 ```
 
-Abre `http://localhost:5173/calculadora/` para ver la aplicación en local.
+Abre `http://localhost:5173/` para ver la aplicación en local.
 
 ## 🗂️ Estructura del proyecto
 
@@ -50,7 +50,7 @@ src/
 
 Este proyecto se publica en GitHub Pages desde la rama `gh-pages`. El comando `yarn deploy` compila la aplicación, limpia archivos `.DS_Store` del build y publica `dist/` usando el CLI de Micazoyolli Foundation sin crear commits de despliegue en `main`.
 
-La configuración `base` de Vite debe conservar la subruta del repositorio: `/calculadora/`.
+La aplicación utiliza la raíz `/` como `base` porque se publica en un dominio propio.
 
 ## 🧠 Funcionalidad
 
